@@ -32,8 +32,7 @@ const Keypad = () => {
       <Row>
         <Button>0</Button>
         <Button>.</Button>
-        <Button>=</Button>
-        <Button></Button>
+        <Button type="large">=</Button>
       </Row>
     </section>
   );

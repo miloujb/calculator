@@ -1,4 +1,11 @@
 import React from "react";
 
-const button = props => <button className="button">{props.children}</button>;
+const button = props => {
+  const buttonClass = ["button"];
+
+  if (typeof props !== "undefined" && typeof props.type !== "undefined")
+    buttonClass.push("button-" + props.type);
+
+  return <button className={buttonClass.join(" ")}>{props.children}</button>;
+};
 export default button;
