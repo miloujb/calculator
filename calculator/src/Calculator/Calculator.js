@@ -7,6 +7,17 @@ class Calculator extends React.Component {
     formula: "",
     result: 0
   };
+
+  onPress = event => {
+    let formula = this.state.formula;
+    const pressedButton = event.target.innerHTML;
+    if (pressedButton === "AC") return this.clear();
+  };
+
+  clear() {
+    this.setState({ formula: formula });
+  }
+
   render() {
     console.log(this.state);
     return (
