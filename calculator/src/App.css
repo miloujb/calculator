@@ -22,31 +22,25 @@
 
 .result-screen {
   height: 19vh;
-  font-size: 8rem;
+  font-size: 2rem;
   font-weight: 600;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: white;
 }
 
 .formula-screen {
   height: 6vh;
-  font-size: 2.5rem;
-
-  /* To display the value at the bottom-right of the container */
+  width: 25%;
+  font-size: 1.5rem;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: white;
 }
 
 .screen {
   height: 25vh;
   width: 100%;
-  padding: 0 2rem;
   overflow: hidden;
-  white-space: no-wrap;
-  color: var(--color-light-white);
-  background-color: var(--color-tomato);
+  background-color: white;
 }
