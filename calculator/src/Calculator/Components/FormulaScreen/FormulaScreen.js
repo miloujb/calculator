@@ -1,7 +1,7 @@
 import React from "react";
 
-const FormulaScreen = () => {
-  return <div className="formula-screen">3000 + 100 + 20 + 4 </div>;
+const FormulaScreen = props => {
+  return <div className="formula-screen">{props.children}</div>;
 };
 
 export default FormulaScreen;

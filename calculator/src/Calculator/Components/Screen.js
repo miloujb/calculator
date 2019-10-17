@@ -2,11 +2,11 @@ import React from "react";
 import ResultScreen from "./ResultScreen/ResultScreen";
 import FormulaScreen from "./FormulaScreen/FormulaScreen";
 
-const Screen = () => {
+const Screen = props => {
   return (
     <div className="screen">
-      <ResultScreen />
-      <FormulaScreen />
+      <ResultScreen>{props.result}</ResultScreen>
+      <FormulaScreen>{props.equation}</FormulaScreen>
     </div>
   );
 };

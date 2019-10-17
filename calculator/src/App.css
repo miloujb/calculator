@@ -5,7 +5,7 @@
   background-image: linear-gradient(
     72.5deg,
     rgba(0, 175, 255, 1) 27.9%,
-    rgba(0, 224, 254, 1) 84.2%
+    #00e0fe 84.2%
   );
   background-size: cover;
   display: flex;
@@ -27,7 +27,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 
 .formula-screen {
@@ -37,14 +38,19 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  color: white;
+  background-color: transparent;
+  color: black;
 }
 
 .screen {
   height: 25vh;
   width: 100%;
   overflow: hidden;
-  background-color: black;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(239, 246, 249, 1) 0%,
+    rgba(206, 239, 253, 1) 90%
+  );
 }
 
 .row {
@@ -64,7 +70,11 @@
   height: 100%;
   font-size: 3rem;
   font-family: inherit;
-  background-color: darkblue;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(56, 207, 191, 1) 0%,
+    rgba(10, 70, 147, 1) 90.2%
+  );
   border: 1px solid transparent;
   outline: none;
   display: flex;
@@ -75,7 +85,7 @@
 
 .button:hover {
   color: white;
-  background-color: slategray;
+  background-color: white;
 }
 .button:active {
   transform: scale(0.95);
