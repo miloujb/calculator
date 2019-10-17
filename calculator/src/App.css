@@ -23,7 +23,7 @@
 .result-screen {
   height: 19vh;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 300;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -45,4 +45,38 @@
   width: 100%;
   overflow: hidden;
   background-color: black;
+}
+
+.row {
+  height: 11vh;
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+.keys {
+  height: 55vh;
+  width: 100%;
+}
+
+.button {
+  width: 25%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: inherit;
+  background-color: darkblue;
+  border: 1px solid transparent;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.button:hover {
+  color: white;
+  background-color: slategray;
+}
+.button:active {
+  transform: scale(0.95);
 }
