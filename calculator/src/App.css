@@ -12,3 +12,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.calculator {
+  height: 80vh;
+  width: 25%;
+  box-shadow: 0 2rem 4rem var(--shadow);
+  background-color: black;
+}
