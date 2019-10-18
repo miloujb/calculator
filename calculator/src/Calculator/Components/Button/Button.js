@@ -6,6 +6,10 @@ const button = props => {
   if (typeof props !== "undefined" && typeof props.type !== "undefined")
     buttonClass.push("button-" + props.type);
 
-  return <button className={buttonClass.join(" ")}>{props.children}</button>;
+  return (
+    <button className={buttonClass.join(" ")} onClick={props.onPress}>
+      {props.children}
+    </button>
+  );
 };
 export default button;
