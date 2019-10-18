@@ -19,7 +19,17 @@ class Calculator extends React.Component {
       formula += pressedButton;
     else if (["+", "-", "*", "/", "%"].indexOf(pressedButton) !== -1)
       formula += " " + pressedButton + " ";
-    else if (pressedButton === "=") {
+    // functionality for percentage
+    /*
+    else if (pressedButton === "%")
+     */
+    //functionality for plus minus
+    /*
+      else if (pressedButton === "+/-" && pressedButton.indexOf(pressedButton -1) !== [+, -, *, /, %, "AC"]) 
+       Math.sign(pressedButton.indexOf(pressedButton -1))
+      */ else if (
+      pressedButton === "="
+    ) {
       try {
         const evalResult = eval(formula);
         const result = Number.isInteger(evalResult)
@@ -27,7 +37,7 @@ class Calculator extends React.Component {
           : evalResult.toFixed(2);
         this.setState({ result });
       } catch (error) {
-        alert("That is not a valid mathematical equation. Please try again");
+        alert("That is not a valid mathematical equation. Please try again.");
       }
     } else {
       formula = formula.trim();

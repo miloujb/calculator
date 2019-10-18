@@ -49,7 +49,12 @@
   height: 25vh;
   width: 100%;
   overflow: hidden;
-  background: linear-gradient(to right, #ad5389, #3c1053);
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
 }
 
 .row {
@@ -69,12 +74,7 @@
   height: 100%;
   font-size: 3rem;
   font-family: inherit;
-  background-image: linear-gradient(
-    89.4deg,
-    rgba(74, 77, 103, 1) -4.3%,
-    rgba(119, 125, 165, 1) 102.1%
-  );
-
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
   border: 1px solid transparent;
   outline: none;
   display: flex;
@@ -93,11 +93,21 @@
 
 .button-large {
   width: 50%;
-  background: linear-gradient(to right, #ad5389, #3c1053);
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
   color: white;
 }
 
 .button-large:hover {
-  color: black;
-  background: linear-gradient(to right, #ad5389, #3c1053);
+  color: rgb(148, 128, 128);
+  background-image: linear-gradient(
+    to top,
+    #1e3c72 0%,
+    #1e3c72 1%,
+    #2a5298 100%
+  );
 }

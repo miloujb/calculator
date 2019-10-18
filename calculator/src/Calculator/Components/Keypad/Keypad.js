@@ -9,7 +9,7 @@ const Keypad = props => {
         <Button onPress={props.onPress}>AC</Button>
         <Button onPress={props.onPress}>+/-</Button>
         <Button onPress={props.onPress}>%</Button>
-        <Button onPress={props.onPress}>+</Button>
+        <Button onPress={props.onPress}>/</Button>
       </Row>
       <Row>
         <Button onPress={props.onPress}> 9</Button>
